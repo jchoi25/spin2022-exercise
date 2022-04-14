@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import pygit2
 from pygit2 import Repository
 repo = Repository('.git')
 
