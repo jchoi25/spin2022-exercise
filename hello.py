@@ -9,7 +9,7 @@ print("""<html>
 
 print("""
 <p>Git log is:
-<pre>"""
+<pre>""")
 
 last = repo[repo.head.target]
 for commit in repo.walk(last.id, pygit2.GIT_SORT_TIME):
