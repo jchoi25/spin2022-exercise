@@ -19,7 +19,7 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-          ref: "master"
+          ref: "main"
       
       # Install prerequisite libraries for einstein toolkit
       - name: Install pre-requisite libraries
@@ -44,4 +44,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "master"
+          branch: "main"
