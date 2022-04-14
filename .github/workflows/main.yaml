@@ -25,7 +25,7 @@ jobs:
       - name: Install pre-requisite libraries
         run:  |
           sudo apt update
-          $(sudo -l sudo) su -c 'apt-get install --fix-missing -y python3  
+          sudo apt-get install -y python3
 
       # create a demo website
       - name: Create HTML file
