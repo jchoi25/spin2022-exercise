@@ -20,12 +20,12 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
           ref: "main"
-      
+
       # Install prerequisite libraries for einstein toolkit
       - name: Install pre-requisite libraries
-        run:  |
+        run: |
           sudo apt update
-          sudo apt-get install -y python3
+          sudo apt-get install -y python3 python3-pygit2
 
       # create a demo website
       - name: Create HTML file
@@ -39,7 +39,7 @@ jobs:
           git config --local user.email "maintainers@einsteintoolkit.org"
           git config --local user.name "github runner"
           git commit -m "updated html file" || true
-          
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
