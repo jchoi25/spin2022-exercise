@@ -4,7 +4,7 @@ repo = Repository('.git')
 
 print("""<html>
 <body>
-<p>Hello, Roland!<p/>""")
+<p>Hello, Juyoung!<p/>""")
 
 print("""
 <p>Git log is:
